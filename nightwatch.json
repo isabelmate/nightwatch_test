@@ -1,0 +1,125 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder": "reports",
+  "globals_path": "/tests/globals.js",
+
+  "webdriver" : {
+    "start_process": true,
+    "server_path": "node_modules/.bin/chromedriver",
+    "port": 9515
+  },
+
+  "test_workers": {
+    "enabled": false,
+    "workers": "auto"
+  },
+
+  "test_settings" : {
+    "default" : {
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      },
+      "screenshots": {
+        "enabled": true,
+        "on_failure": true,
+        "on_error": true,
+        "path": "./reports/screenshots"
+      }
+    },
+    "firefox" : {
+      "desiredCapabilities": {
+        "browserName": "firefox"
+      },
+      "screenshots": {
+        "path": "./reports/firefox/screenshots"
+      }
+    },
+    "chrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      },
+      "screenshots": {
+        "path": "./reports/chrome/screenshots"
+      }
+    },
+    "ipad": {
+      "screenshots": {
+        "path": "./reports/ipad/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "mobileEmulation": {
+            "deviceName" : "iPad"
+          }
+        }
+      }
+    },
+    "ipad-pro": {
+      "screenshots": {
+        "path": "./reports/ipad-pro/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "mobileEmulation": {
+            "deviceName" : "iPad Pro"
+          }
+        }
+      }
+    },
+    "galaxy-S5": {
+      "screenshots": {
+        "path": "./reports/galaxy-S5/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "mobileEmulation": {
+            "deviceName" : "Galaxy S5"
+          }
+        }
+      }
+    },
+    "pixel-2": {
+      "screenshots": {
+        "path": "./reports/pixel-2/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "mobileEmulation": {
+            "deviceName" : "Pixel 2"
+          }
+        }
+      }
+    },
+    "ipad-mini": {
+      "screenshots": {
+        "path": "./reports/ipad-mini/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "mobileEmulation": {
+             "deviceName" : "Apple iPad Mini"
+            }
+        }
+      }
+    },
+    "iphone-x": {
+      "screenshots": {
+        "path": "./reports/iphone-x/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "mobileEmulation": {
+             "deviceName" : "iPhone X"
+            }
+        }
+      }
+    }
+  }
+
+}
